@@ -3,3 +3,7 @@ osx_image: xcode10
 xcode_scheme: MacDemoProject
 xcode_project: MacDemoProject.xcodeproj
 xcode_destination: platform=iOS Simulator,name=iPhone XR
+before_install:
+- carthage bootstrap --platform iOS
+after_script:
+- cat $TMPDIR/carthage-*.log
