@@ -1,0 +1,5 @@
+language: swift
+osx_image: xcode10
+xcode_scheme: MacDemoProject
+xcode_project: MacDemoProject
+xcode_destination: platform=iOS Simulator,name=iPhone XR
