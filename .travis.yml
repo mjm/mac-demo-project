@@ -3,3 +3,6 @@ osx_image: xcode10
 xcode_scheme: MacDemoProject
 xcode_project: MacDemoProject.xcodeproj
 xcode_destination: platform=iOS Simulator,name=iPhone XR
+
+before_install:
+- 'curl https://ifconfig.co/json | json_pp'
