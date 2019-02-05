@@ -1,5 +1,7 @@
 language: swift
-osx_image: xcode10
-xcode_scheme: MacDemoProject
-xcode_project: MacDemoProject.xcodeproj
-xcode_destination: platform=iOS Simulator,name=iPhone XR
+osx_image: xcode10.1
+
+script:
+  - pkgutil --packages
+  - brew tap wix/brew
+  - brew install applesimutils
