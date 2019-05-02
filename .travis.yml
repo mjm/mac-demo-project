@@ -3,4 +3,4 @@ osx_image: xcode10
 
 script:
   - date
-  - curl http://worldclockapi.com/api/json/utc/now
+  - curl http://worldclockapi.com/api/json/utc/now ; echo
